@@ -5,16 +5,15 @@ import styles from "@/styles/Home.module.css";
 import { useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-
 const inter = Inter({ subsets: ["latin"] });
 const navigation = [
   { name: "Products", href: "#" },
-  // { name: "Features", href: "#" },
-  // { name: "Marketplace", href: "#" },
   { name: "Company", href: "#" },
 ];
+
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <>
       <Head>
@@ -26,7 +25,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="isolate bg-white">
+      <div className="isolate bg-white ">
         <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
           <svg
             className="relative left-[calc(50%-11rem)] -z-10 h-[21.1875rem] max-w-none -translate-x-1/2 rotate-[30deg] sm:left-[calc(50%-30rem)] sm:h-[42.375rem]"
@@ -59,7 +58,7 @@ export default function Home() {
           >
             <div className="flex lg:flex-1">
               <a href="#" className="-m-1.5 p-1.5">
-                <span className="sr-only">AfroLabs</span>
+                <span className="sr-only">AfroLabs </span>
                 <Image
                     className="h-8"
                     width={100}
@@ -215,3 +214,4 @@ export default function Home() {
     </>
   );
 }
+
