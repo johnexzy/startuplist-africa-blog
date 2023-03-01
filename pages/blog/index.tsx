@@ -1,11 +1,11 @@
 import { GetStaticProps } from "next";
 import { Fragment } from "react";
 import Head from "next/head";
+import Link from "next/link";
 import Image from "next/image";
+import { createMarkup } from "@/utils";
 export default function Blog({ allPosts: { posts } }: any) {
-  function createMarkup(html: string) {
-    return { __html: html };
-  }
+
   return (
     <>
       <Head>
@@ -39,10 +39,10 @@ export default function Blog({ allPosts: { posts } }: any) {
               >
                 <div className="group relative">
                   <h3 className="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                    <a href={post.URL}>
+                    <Link href={`/blog/${post.slug}`}>
                       <span className="absolute inset-0" />
                       {post.title}
-                    </a>
+                    </Link>
                   </h3>
                   <div
                     className="mt-5 text-sm leading-6 text-gray-600 line-clamp-3"
