@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import { useState } from "react";
@@ -90,12 +91,11 @@ export default function Home() {
               ))}
             </div>
             <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-              <a
-                href="#"
-                className="text-sm font-semibold leading-6 text-gray-900"
-              >
-                Blog <span aria-hidden="true">&rarr;</span>
-              </a>
+              <Link href={'/blog'} className="text-sm font-semibold leading-6 text-gray-900">
+           
+              Blog <span aria-hidden="true">&rarr;</span>
+            </Link>
+    
             </div>
           </nav>
           <Dialog as="div" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
