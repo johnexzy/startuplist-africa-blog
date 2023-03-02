@@ -5,7 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { createMarkup } from "@/utils";
 export default function Blog({ allPosts: { posts } }: any) {
-
   return (
     <>
       <Head>
@@ -14,24 +13,24 @@ export default function Blog({ allPosts: { posts } }: any) {
           name="description"
           content="Creating a Better Future for Africa with Afrolabs' Innovative Solutions"
         />
-        <meta
-          property="og:image"
-          content="/ogimage.jpg"
-        />
+        <meta property="og:image" content="/ogimage.jpg" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="bg-white py-24 sm:py-32">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:mx-0">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-              From Our blog
+      <div className="bg-white ">
+        <div className=" bg-blend-normal blog-header py-24 sm:py-32 border-b-8 border-gray-300">
+          <div className=" mx-auto max-w-7xl px-6 lg:px-">
+            <h2 className="text-3xl font-medium tracking-tight text-gray-100 sm:text-4xl">
+              Startuplist Africa Blog
             </h2>
-            <p className="mt-2 text-lg leading-8 text-gray-600">
-              Learn how to grow your business with our expert advice.
+            <p className="mt-5 text-lg leading-8 text-gray-100">
+              Expand your knowledge on African Startups and markets with
+              detailed articles and case studies.
             </p>
           </div>
-          <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-y-16 gap-x-8 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        </div>
+        <div className="mx-auto max-w-7xl px-6 pb-6 lg:px-8">
+          <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-y-16 gap-x-8 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-2">
             {posts.map((post: any) => (
               <article
                 key={post.ID}
@@ -71,6 +70,16 @@ export default function Blog({ allPosts: { posts } }: any) {
                 </div>
               </article>
             ))}
+          </div>
+        </div>
+        <div className=" bg-blend-normal blog-header py-24 sm:py-32 border-t-8 border-gray-300">
+          <div className="flex justify-between mx-auto max-w-7xl px-6 lg:px-">
+            <h2 className="text-3xl font-medium tracking-tight text-gray-100 sm:text-4xl">
+              Startuplist Africa Blog
+            </h2>
+            <p className="mt-5 text-lg leading-8 text-gray-100">
+              &copy; 2023 All rights reserved. <a href="https://startuplist.africa" className=" decoration-gray-600">Startuplist Africa</a>
+            </p>
           </div>
         </div>
       </div>
