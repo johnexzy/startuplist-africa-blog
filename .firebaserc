@@ -1,8 +1,5 @@
 {
   "projects": {
-    "default": "startuplist-africa-blog",
-    "blog": "startuplist-africa-blog"
-  },
-  "targets": {},
-  "etags": {}
+    "default": "startuplist-africa-blog"
+  }
 }
