@@ -21,7 +21,7 @@ export default function Blog({ allPosts: { posts } }: any) {
         <div className=" bg-blend-normal blog-header py-24 sm:py-32 border-b-8 border-gray-300">
           <div className=" mx-auto max-w-7xl px-6 lg:px-">
             <h2 className="text-3xl font-medium tracking-tight text-gray-100 sm:text-4xl">
-              Startuplist Africa Blog
+              Startuplist Africa&apos; Blog
             </h2>
             <p className="mt-5 text-lg leading-8 text-gray-100">
               Expand your knowledge on African Startups and markets with
