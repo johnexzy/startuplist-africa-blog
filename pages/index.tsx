@@ -13,7 +13,7 @@ export default function Blog({ allPosts: { posts } }: any) {
           name="description"
           content="Discover and learn more about the african tech ecosystem"
         />
-        <meta property="og:image" content="/ogimage.jpeg" />
+        <meta property="og:image" content="https://startuplistafrica.files.wordpress.com/2021/09/startuplist-africa-announcement-banner.png" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
